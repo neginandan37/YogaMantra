@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yoga</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<link rel="shortcut icon" href="img/S-icon.png">
+<!-- ---------cst css---------------- -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- ----------testimonials----------------- -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+<header class="slide-img">
+  <nav class="navbar navbar-expand-md  navbar-dark  fixed-top ">
+    <div class="container-fluid"> <a href="index.html" class="navbar-brand"><img src="img/logo1.png" width="180"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="index.html">courses</a> </li>
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="classes.html">classes</a> </li>
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="members.html">members</a> </li>
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="blog.html">blog</a> </li>
+          <li>
+            <div id="myOverlay" class="overlay"> <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+              <div class="overlay-content">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit">SEARCH</button>
+                </form>
+              </div>
+            </div>
+            <button class="openBtn" onclick="openSearch()"><i class="fas fa-search pt-2" ></i></button>
+          </li>
+        </ul>
+        <div class="login-popup-box">
+        <a href="#" class="mybtn ml-5" role="button" data-toggle="modal" data-target="#myModal">Get Started</a>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">SignUp</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label><i class="fa fa-user"></i> Username</label>
+                    <input type="text" placeholder="Username.." name="username" required="required" class="form-control">
+                  </div>
+                  <div class="form-group">
+                   <label><i class="fa fa-envelope"></i> Password</label>
+                  <input type="text" placeholder="Password.." name="Password" required="required" class="form-control">
+                  </div>
+                   <div class="form-group">
+                   <label><i class="fa fa-lock"></i> Email</label>
+                  <input type="text" placeholder="Email.." name="Email" required="required" class="form-control">
+                  </div>
+                  <div class=" modal-footer justify-content-center">
+                  <button type="submit" class="pl-3 pr-3">Submit</button>
+                  </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div> 
+    </div>
+  </nav>
+  <div class="container-fluid text-right text-white header_text ">
+    <h3>PRACTICE YOGA ONLINE<br>
+      ANYTIME, ANYWHERE</h3>
+    <p>15- Days Free Trial<br>
+      Then 14.99 per month</p>
+      <form>
+    <input type="email" name="email" required="required" placeholder="Enter your Email"> 
+    <input type="submit" name="submit" value="Start Today">
+    </form>
+  </div>
+</header>
+<section class="container text-center section-mt ">
+  <h2>COURSES</h2>
+  <p class="sub-heading">We offers high quality online yoga and maditation videos,<br>
+    for practicing yoga at home</p c>
+  <div class="row mt-5">
+    <div class="col-sm-6 col-md-4">
+      <div class="box"> <img src="img/cource1.jpg" alt="" class="cource img-fluid" >
+        <div class="box-content">
+          <h4 class="title">Beginner</h4>
+          <i class="fab fa-playstation"><span>22</span></i> </div>
+        <p class="description"> <i class="far fa-play-circle"></i> PLAY ALL </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="box"> <img src="img/cource2.jpg" alt="" class="cource img-fluid">
+        <div class="box-content">
+          <h4 class="title">Weight Loss</h4>
+          <i class="fab fa-playstation"><span>15</span></i> </div>
+        <p class="description"> <i class="far fa-play-circle"></i> PLAY ALL </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="box"> <img src="img/cource3.jpg" alt="" class="cource img-fluid">
+        <div class="box-content">
+          <h4 class="title">Energy Balancing</h4>
+          <i class="fab fa-playstation"><span>28</span></i> </div>
+        <p class="description"> <i class="far fa-play-circle"></i> PLAY ALL </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 ">
+      <div class="box"> <img src="img/cource4.jpg" alt="" class="cource img-fluid">
+        <div class="box-content">
+          <h4 class="title">Athlete Recovery</h4>
+          <i class="fab fa-playstation"><span>32</span></i> </div>
+        <p class="description"> <i class="far fa-play-circle"></i> PLAY ALL </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="box"> <img src="img/cource5.jpg" alt="" class="cource img-fluid">
+        <div class="box-content">
+          <h4 class="title">Maditation</h4>
+          <i class="fab fa-playstation"><span>22</span></i> </div>
+        <p class="description"> <i class="far fa-play-circle"></i> PLAY ALL </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="box"> <img src="img/cource6.jpg" alt="" class="cource img-fluid">
+        <div class="box-content">
+          <h4 class="title">All Levels</h4>
+          <i class="fab fa-playstation"><span>21</span></i> </div>
+        <p class="description"> <i class="far fa-play-circle"></i> PLAY ALL </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid prlx-box1  text-white">
+  <div class="container prlx-box1-contain">
+    <h3>GAIN STRENGHT</h3>
+    <p>We have classes focused on helping <br>
+      you get strong and stable</p>
+    <a href="#">Learn More</a> </div>
+</section>
+<section class="container text-center section-mt  connect-section">
+  <h2>Play, Pause, Connect...</h2>
+  <p class="sub-heading">We offers high quality online yoga and maditation videos,
+    for practicing yoga at home:</p>
+  <div class="row rounded-boxes">
+    <div class="col-lg-4 mt-4">
+      <div class="rounded-box1"><img src="img/location.png"></div>
+      <h3>Your Place</h3>
+      <p>Take your favourite teacher wherever you go.
+        At home, at work, on your tavels</p>
+    </div>
+    <div class="col-lg-4 mt-3">
+      <div class="rounded-box2"><img src="img/clock.png"> </div>
+      <h3>Your Time</h3>
+      <p>We’ll fit around your schedule. Practise any
+        time of day with classes frome 10 to 90 minutes</p>
+    </div>
+    <div class="col-lg-4 mt-3">
+      <div class="rounded-box3"><img src="img/clock.png"></div>
+      <h3>Your Way</h3>
+      <p>Videos work on any device or can
+        be downloadable to watch offline.</p>
+    </div>
+  </div>
+</section>
+<section class="container-fluid prlx-box2 text-white">
+  <div class="container prlx-box2-contain">
+    <h3 class="text-right">DEVELOP FLEXIBILITY</h3>
+    <p class="text-right">Whether it’s bending over the touch your<br>
+      toes or getting into that new inversion, we<br>
+      have classess to help you get there. </p>
+    <a href="#" class="f-right">Learn More</a> </div>
+</section>
+<article class="section-mt text-center">
+  <div class="container">
+    <h2>WHAT OUR GLOBAL COMMUNITY SAYS</h2>
+    <p class="sub-heading">Take a look at what our members frome all around the world have to say about us</p>
+    <div class="row">
+      <div class="col-md-12 clearfix">
+        <div class="col-sm-offset-1 col-sm-10">
+          <div id="testimonial-slider" class="owl-carousel">
+            <div class="testimonial">
+              <p class="description"> Whether it’s bending over the touch your toes or getting into that new invesion, we have classess to help you get there. Whether it’s bending over the touch your toes or getting.<br>
+                <strong>Kathrine Lighthood, USA</strong> </p>
+              <div class="pic"> <img src="img/kathrine-news.jpg" alt=""> </div>
+            </div>
+            <div class="testimonial">
+              <p class="description"> Whether it’s bending over the touch your toes or getting into that new invesion, we have classess to help you get there. Whether it’s bending over the touch your toes or getting.<br>
+                <strong>Lalit Adakari, Breatine</strong> </p>
+              <div class="pic"> <img src="img/lalit-news.jpg" alt=""> </div>
+            </div>
+            <div class="testimonial">
+              <p class="description"> Whether it’s bending over the touch your toes or getting into that new invesion, we have classess to help you get there. Whether it’s bending over the touch your toes or getting.<br>
+                <strong>Nandan Negi, INDIA</strong> </p>
+              <div class="pic"> <img src="img/nandan-news.jpg" alt=""> </div>
+            </div>
+            <div class="testimonial">
+              <p class="description"> Whether it’s bending over the touch your toes or getting into that new invesion, we have classess to help you get there. Whether it’s bending over the touch your toes or getting.<br>
+                <strong>Kathrine Lighthood, USA</strong> </p>
+              <div class="pic"> <img src="img/kathrine-news.jpg" alt=""> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article> 
+<section class="container-fluid mt-5 prlx-box3  text-white">
+  <div class="container prlx-box3-contain">
+    <h3>DEVELOP FLEXIBILITY</h3>
+    <p>Whether it’s bending over the touch your<br>
+      toes or getting into that new inversion, we<br>
+      have classess to help you get there. </p>
+    <a href="#">Learn More</a> </div>
+</section>
+<article class=" container section-mt text-center news-sect">
+  <h2>LET’S KEEP IN TOUCH</h2>
+  <p>Subscribe to our Newslatter and follow us on Social Media</p>
+  <form>
+    <input type="Email" name="Email" placeholder="your email" required="required">
+    <input type="submit" name="Subscribe" value="Subscribe">
+  </form>
+  <hr>
+  <ul>
+    <li style="padding: 14px 20px;"><a href="#"><i class="fab fa-facebook-f" ></i></a></li>
+    <li style="padding: 14px 16px;"><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li style="padding: 14px 18px;"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    <li style="padding: 14px 14px;"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+    <li style="padding: 13px 14px;"><a href="#"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</article>
+<footer>
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col-lg-4 col-md 12 mb-4"><img src="img/logo1.png" class="footer-logo" >
+        <p class="p_lenght">Yoga Mantra is designed to help you feel better in body and mind. Get unlimited access to the best online yoga, meditation, and Pilates classes.</p>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h3 class="text-white">Quick Links</h3>
+        <div class=" q-links f-left">
+          <ul>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Programes </a></li>
+            <li><a href="#">Artical</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Teachers</a></li>
+            <li><a href="#">More Yoga</a></li>
+          </ul>
+        </div>
+        <div class=" q-links f-left">
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Ofline Viewing App</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Disclalmcer</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 text-white app-store">
+        <h3 class="text-white">Get In Touch</h3>
+          <ul>
+            <li>
+                <div class="cont-box">
+                    <div class="icon-box"><img src="img/media.jpg"></div>
+                    <div class="address-box">
+                        <p><a href="tel:01382684122" class="hvr-forward">+91 01382684122</a></p>
+                        <p><a href="tel:01382892332" class="hvr-forward">+91 01382684122</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cont-box">
+                    <div class="icon-box"><img src="img/media2.jpg"></div>
+                    <div class="address-box">
+                        <p> <a href="#">ambedkar colony, near chattarpur tample , <br>
+      Chattarpur, New Delhi-110017 </a> </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cont-box">
+                    <div class="icon-box"><img src="img/mail.jpg"></div>
+                    <div class="address-box">
+                        <p><a href="mailto:negin@example.com">negin@example.com<br>
+      negin@example.com
+      </a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid copy-right text-white text-center">
+    <p class="m-0">All Rights reserved to Dreamworks.com Disigned by Dreamworks.com</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+<!-- --------testimonials script----------- --> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> 
+<script src="js/jquery.scrollUp.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:2,
+        itemsDesktop:[1199,2],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination: false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:true
+    });
+  }); 
+$(function () {
+    $.scrollUp({
+      scrollDistance: 1200,
+      animation: 'slide',
+      scrollImg: true 
+    });
+
+}); 
+</script> 
+<!----------search bar script----------> 
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>

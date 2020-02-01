@@ -1,0 +1,394 @@
+html, * {
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+.section-mt {
+	margin-top: 5rem;
+}
+.section-mt h2 {
+	color: #223d70;
+}
+.section-mt h3 {
+	color: #223d70;
+}
+.section-mt p {
+	color: #223d70;
+}
+.f-right {
+	float: right;
+}
+.f-left {
+	float: left;
+}
+h1, h2, h3, h4 {
+	font-weight: 500;
+}
+
+header nav {
+	background: rgba(0,0,0,.70);
+}
+.navbar-brand img {
+	width: 154px;
+}
+.navbar-dark .navbar-nav .nav-link {
+	transition: 0.5s all;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #F9E155!important;
+}
+@media (max-width: 576px) {
+.navbar-brand img {
+	width: 120px;
+}
+}
+/*--------------- searchbar start------------------- */
+.openBtn {
+	background: none;
+	border: none;
+	padding: 10px 15px;
+	font-size: 20px;
+	cursor: pointer;
+	outline: none;
+}
+.openBtn i {
+	color: #fff;
+	font-size: 20px;
+}
+.overlay {
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+}
+.overlay-content {
+	position: relative;
+	top: 46%;
+	width: 80%;
+	text-align: center;
+	margin-top: 30px;
+	margin: auto;
+}
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	cursor: pointer;
+	color: white;
+}
+.overlay .closebtn:hover {
+	color: #ccc;
+}
+.overlay input[type=text] {
+	padding: 15px;
+	font-size: 17px;
+	border: none;
+	float: left;
+	width: 70%;
+	background: white;
+}
+.overlay input[type=text]:hover {
+	background: #f1f1f1;
+}
+.overlay button {
+	float: left;
+	width: 30%;
+	padding: 15px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.overlay button:hover {
+	background: #bbb;
+}
+@media (max-width: 576px){
+	.overlay input[type=text] {
+	font-size: 15px;
+}
+.overlay button {
+	font-size: 15px;
+}	
+}
+/*------------- searchbar end --------------- */
+.mybtn {
+	background: none;
+	border: none;
+	border: 1.5px solid #fff;
+	color: #fff;
+	padding: 5px 15px 5px 15px;
+	transition: 0.5s all;
+}
+.mybtn:hover {
+	text-decoration: none;
+	color: #B06FD9;
+	border: 1.5px solid #B06FD9;
+}
+@media (max-width: 768px) {
+.mybtn {
+	margin: 0!important;
+}
+}
+.slide-img {
+	background-image: url('../img/classes-header-img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.header_text {
+	padding-top: 240px;
+}
+.header_text h3 {
+	font-size: 4rem;
+	line-height: 80px;
+	color: #464e52;
+	margin-bottom: 30px;
+	width: 50%;
+}
+.header_text p {
+	font-size: 1.4rem;
+	width: 50%;
+	line-height: 40px;
+	color: #464e52;
+}
+
+.wlc_yr{
+	margin-top: 40px;
+	padding-left: 15px;
+}
+.wlc_yr h2{
+	line-height: 50px;
+	margin-bottom: 25px;
+	font-style: italic;
+	font-size:2em;
+	color: #464e52;
+	font-family: 'Pacifico', cursive;
+}
+.wlc_yr p{
+	line-height: 35px;
+	color: #464e52;
+	font-family: 'Pacifico', cursive;
+}
+.wlc_yr a{
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 25px 10px 25px;
+	background-color: #ffa16e;
+	letter-spacing: 5px;
+	text-decoration: none;
+	color: #464e52;
+}
+.wlc_yr_img-box img{
+	width: 100%;
+}
+.mbrs-sect h2{
+margin-bottom: 20px;
+}
+.mbrs-sect p{
+line-height: 35px;
+}
+/*----------------------yoga journey-------------------*/
+.list-item {
+	margin-bottom: 10px;
+	
+}
+.list-item img{
+	width: 100%;
+}
+.list-item_txt h3{
+	font-size: 18px;
+	color: #003232;
+}
+.list-item_txt p{
+	font-size: 14px;
+	color: #323232;
+}
+.list-item_txt{
+	padding:15px 15px 1px 15px; 
+	
+}
+.list-item_content{
+	box-shadow: 0px 0px 10px 0px #ccc;
+}
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: #FF7182;
+	border-color: #FF7182;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: #e04e60;
+}
+.pgn-container{
+	margin-top: 50px;
+}
+
+/*--------------footer---------------------*/
+footer {
+	background-color: #242424;
+	margin-top: 5rem;
+}
+.p_lenght{
+	width: 80%;
+}
+footer p {
+	font-size: 16px;
+	font-weight: lighter;
+	margin-top: 20px;
+	color: #969696;
+}
+footer h3 {
+	letter-spacing: 3px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+footer ul li {
+	margin-bottom: 6px;
+}
+footer ul li a {
+	color: #969696;
+	transition: all 0.5s ease;
+	padding: 2px;
+	font-weight: lighter;
+}
+footer ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+	padding-left: 10px;
+}
+.q-links {
+	width: 50%;
+}
+.cont-box {
+	position: relative;
+}
+.icon-box {
+	display: table-cell;
+}
+.icon-box:after {
+	height: 1px;
+	width: 18px;
+	content: "";
+	position: absolute;
+	background: white;
+	left: 35px;
+	top: 35px;
+}
+.icon-box img {
+	border: 1px solid white;
+	padding: 4px;
+	margin-top: 20px;
+}
+.address-box {
+	display: table-cell;
+	padding-left: 30px;
+}
+.address-box p {
+	margin: 0;
+}
+.address-box p a {
+	display: table-cell;
+}
+.copy-right {
+	background-color: #141a22;
+	padding: 1rem;
+}
+@media (max-width: 1200px) {
+.footer-logo {
+	width: 200px;
+}
+}
+@media (max-width: 992px) {
+footer .p_lenght{
+	width: 100%;
+}
+footer ul {
+	list-style: none;
+}
+footer ul li {
+	margin-bottom: 5px;
+}
+footer ul li a {
+	transition: all 0.6s ease;
+	padding: 2px;
+}
+footer ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+	padding-left: 10px;
+}
+.copy-right {
+	background-color: #141a22;
+	padding: 1.5rem 4rem;
+}
+}
+
+ @media (max-width: 576px) {
+footer p {
+	font-size: 14px;
+}
+footer h3 {
+	letter-spacing: 3px;
+	font-size: 16px;
+}
+footer ul li a {
+	font-size: 14px;
+}
+}
+
+/*------------------responsive design----------------*/
+@media (min-width: 768px) {
+.container {
+	max-width: 85%;
+}
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+ @media (max-width: 576px) {
+
+}
+
+
+@media (max-width: 480px) {
+
+}

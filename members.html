@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>classes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-----------cst css------------------>
+    <link rel="stylesheet" type="text/css" href="css/members.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+    <header class="slide-img">
+        <nav class="navbar navbar-expand-md  navbar-dark  fixed-top ">
+            <div class="container-fluid ">
+                <a href="index.html" class="navbar-brand"><img src="img/logo1.png" width="180"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item"> <a class="nav-link text-white pt-3" href="index.html">courses</a> </li>
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="classes.html">classes</a> </li>
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="members.html">members</a> </li>
+          <li class="nav-item"> <a class="nav-link text-white pt-3" href="blog.html">blog</a> </li>
+                        <li>
+                            <div id="myOverlay" class="overlay"> <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <form action="/action_page.php">
+                                        <input type="text" placeholder="Search.." name="search">
+                                        <button type="submit">SEARCH</i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="openBtn" onclick="openSearch()"><i class="fas fa-search pt-2"></i></button>
+                        </li>
+                    </ul>
+                    <div class="login-popup-box">
+        <a href="#" class="mybtn ml-5" role="button" data-toggle="modal" data-target="#myModal">Get Started</a>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">SignUp</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label><i class="fa fa-user"></i> Username</label>
+                    <input type="text" placeholder="Username.." name="username" required="required" class="form-control">
+                  </div>
+                  <div class="form-group">
+                   <label><i class="fa fa-envelope"></i> Password</label>
+                  <input type="text" placeholder="Password.." name="Password" required="required" class="form-control">
+                  </div>
+                   <div class="form-group">
+                   <label><i class="fa fa-lock"></i> Email</label>
+                  <input type="text" placeholder="Email.." name="Email" required="required" class="form-control">
+                  </div>
+                  <div class=" modal-footer justify-content-center">
+                  <button type="submit" class="pl-3 pr-3">Submit</button>
+                  </div>
+                </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header_text text-center">
+                            <h3>WHAT YOU GET FROM <span>ENDURANCE</span> MEMBERSHIP</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid" style="background-color: #b9d2dc;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-2">
+                    <div class="about-text-box">
+                        <h2>It’s all about <br>the people.</h2>
+                        <p>We are good ones. And so are our clients. We wouldn’t have it any other way. Meet the team.</p>
+                        <a href=""> Read More <span>&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1">
+                    <div class="about-bg-img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid">
+        <div class="container section-mt team-section">
+            <h2>Expertise meets encouragement.</h2>
+            <p class="sub-heading">Our world-class teachers provide the perfect mix of knowledge and support to help you progress in mind, body, and heart.</p>
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_1">
+                            <img src="img/member1.jpg" alt="YogMantra member's img" title="Read More"/>
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Nandan Negi</h3>
+                        <p>Hatha, Vinyasa Flow</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_2">
+                            <img src="img/member2.jpg" alt="YogMantra member's img" title="Read More"/>
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Surbhi Mittal</h3>
+                        <p>Hatha, Kundalini</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_3">
+                            <img src="img/member3.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Praveen Pal</h3>
+                        <p>Ashtanga, Vinyasa</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_4">
+                            <img src="img/member4.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Rohit Negi</h3>
+                        <p> Ashtanga Vinyasa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_5">
+                            <img src="img/member5.jpg" aalt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Harshita Pandey</h3>
+                        <p>Vinyasa Flow, Hatha</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_6">
+                            <img src="img/member6.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Subho Haldar</h3>
+                        <p>Dynamic Vinyasa Flow</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_7">
+                            <img src="img/member7.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Manoj Thapa</h3>
+                        <p>Ashtanga, Vinyasa, Power Yoga</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_8">
+                            <img src="img/member8.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>SwatiLekha</h3>
+                        <p>Baptiste Yoga</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_9">
+                            <img src="img/member9.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Ankit Bhatt</h3>
+                        <p>Vinyasa Flow</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_10">
+                            <img src="img/member10.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Ritu Sharma</h3>
+                        <p>Ashtanga, Kundalini</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_11">
+                            <img src="img/member11.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Abhishek Bhatt</h3>
+                        <p>THE SCIENCE OF YOGA</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-profile">
+                        <a href="#" data-toggle="modal" data-target="#myModal_12">
+                            <img src="img/member12.jpg" alt="YogMantra member's img" title="Read More" />
+                        </a>
+                    </div>
+                    <div class="team-title">
+                        <h3>Ankit Negi</h3>
+                        <p>MEDITATION PRACTICE</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-----------------about team members------------------->
+<section class="info-box modal fade" id="myModal_1">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member1.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Hatha, Vinyasa Flow</h6>
+                <h3>Nandan Negi</h3>
+                <p>Nandan Negi is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_2">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member2.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Hatha, Kundalini</h6>
+                <h3>Surbhi Mittal</h3>
+                <p>Surbhi Mittal is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_3">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member3.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Ashtanga, Vinyasa,</h6>
+                <h3>Praveen Pal</h3>
+                <p>Praveen Pal is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_4">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member4.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Ashtanga Vinyasa</h6>
+                <h3>Rohit Neg</h3>
+                <p>Rohit Negi is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_5">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member5.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Vinyasa Flow, Hatha</h6>
+                <h3>Harshita Pandey</h3>
+                <p>Harshita Pandey is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info-box modal fade" id="myModal_6">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member6.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Dynamic Vinyasa Flow</h6>
+                <h3>Subho Haldar</h3>
+                <p>Subho Haldar is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_7">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member7.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Ashtanga, Vinyasa, Power Yoga</h6>
+                <h3>Manoj Thapa</h3>
+                <p>Manoj Thapa is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_8">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member8.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Baptiste Yoga</h6>
+                <h3>SwatiLekha</h3>
+                <p>SwatiLekha is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_9">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member9.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Vinyasa Flow</h6>
+                <h3>Ankit Bhatt</h3>
+                <p>Ankit Bhatt is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_10">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member10.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Ashtanga, Kundalin</h6>
+                <h3>Harshita Panday</h3>
+                <p>Harshita Panday is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_11">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member11.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>THE SCIENCE OF YOGA</h6>
+                <h3>Abhishek Bhatt</h3>
+                <p>Abhishek Bhatt is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-box modal fade" id="myModal_12">
+    <div class="btn-fixed-box">
+        <button type="button" class="close close-bg" data-dismiss="modal">&#10005;</button>
+    </div>
+    <div class="modal-dialog modal-specing">
+        <div class="modal-content modal-content-border">
+            <div>
+                <img src="img/member12.jpg">
+            </div>
+            <div class="mt-5">
+                <h6>Ankit Negi</h6>
+                <h3>MEDITATION PRACTICE</h3>
+                <p>Ankit Negi is a natural teacher and author with more than 10 years of experience. His accessible, grounded classes integrate the best elements of power yoga, anatomical precision and mindfulness teachings. With a "knack for teaching subtle body movements in a way that everyone can understand" (Yoga Journal), Nandan's articulate, down-to-earth teaching will educate and empower you.</p>
+                <address>
+                    <p><span>Tel:</span> +213456789582</p>
+                    <p><span>Email:</span>
+                    <a href="mailto:neginandan@example.com">neginandan@example.com</a></p>
+                </address>
+                <div class="profile-social-icon">
+                    <span>
+                       <a href="#">
+                       <i class="fab fa-facebook-f"></i>
+                       </a>
+                   </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4"><img src="img/logo1.png" class="footer-logo">
+                    <p class="p_lenght">Yoga Mantra is designed to help you feel better in body and mind. Get unlimited access to the best online yoga, meditation, and Pilates classes.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h3 class="text-white">Quick Links</h3>
+                    <div class=" q-links f-left">
+                        <ul>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Programes </a></li>
+                            <li><a href="#">Artical</a></li>
+                            <li><a href="#">Workshops</a></li>
+                            <li><a href="#">Teachers</a></li>
+                            <li><a href="#">More Yoga</a></li>
+                        </ul>
+                    </div>
+                    <div class=" q-links f-left">
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Ofline Viewing App</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Disclalmcer</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">The Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-white app-store">
+                    <h3 class="text-white">Get In Touch</h3>
+                    <ul>
+                        <li>
+                            <div class="cont-box">
+                                <div class="icon-box"><img src="img/media.jpg"></div>
+                                <div class="address-box">
+                                    <p><a href="tel:01382684122" class="hvr-forward">+91 01382684122</a></p>
+                                    <p><a href="tel:01382892332" class="hvr-forward">+91 01382684122</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont-box">
+                                <div class="icon-box"><img src="img/media2.jpg"></div>
+                                <div class="address-box">
+                                    <p> <a href="#">ambedkar colony, near chattarpur tample , <br>
+                  Chattarpur, New Delhi-110017 </a> </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cont-box">
+                                <div class="icon-box"><img src="img/mail.jpg"></div>
+                                <div class="address-box">
+                                    <p><a href="mailto:negin@example.com">negin@example.com<br>
+                  negin@example.com
+                  </a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copy-right text-white text-center">
+            <p class="m-0">All Rights reserved to Dreamworks.com Disigned by Dreamworks.com</p>
+        </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <!----------scrollUp---------->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+    <script src="js/jquery.scrollUp.min.js"></script>
+<script> 
+$(function () {
+    $.scrollUp({
+      scrollDistance: 1200,
+      animation: 'slide',
+      scrollImg: true 
+    });
+}); 
+</script> 
+    <!----------search bar script---------->
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
