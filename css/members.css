@@ -497,9 +497,12 @@ footer ul li a:hover {
    }
 }
 @media (max-width: 480px) {
+	.header_text {
+		padding: 20px;
+	}
 	.header_text h3 {
-		font-size: 1.6rem;
-		line-height: 35px;
+		font-size: 1.4rem;
+		line-height: 33px;
    }
 	.about-text-box h2 {
 		font-size: 2.2rem;
@@ -511,7 +514,7 @@ footer ul li a:hover {
 		font-size: 14px;
    }
 	.team-section h2 {
-		font-size: 1.6rem;
+		font-size: 2rem;
 		line-height: 40px;
    }
 	.team-section .sub-heading {

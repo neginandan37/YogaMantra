@@ -144,79 +144,49 @@ header nav {
 		margin: 10px!important;
    }
 }
-.slide-img {
-	background-image: url('../img/header-img.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 400px;
-}
 
-.courses .wrapper{
+.one_class{
+    background-color: #141a22;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+.video_box .embed-responsive{
     border-radius: 5px;
-    overflow: hidden;
-    background-color: aliceblue;
-    height: 100%;
-    transition: 0.2s; 
 }
-.courses .wrapper:hover{
-    box-shadow: 0 10px 38px rgba(0,0,0,0.1), 0 8px 15px rgba(0,0,0,0.10);
-    transition: 0.2s;
+.session_summary{
+    padding-left: 1em;
 }
-.courses .box-content{
-padding: 1em;
-}
-.courses .col-lg-3{
-    margin-bottom: 1em;
-}
-.courses .box-content .meta-course,
-.courses .box-content .meta-author{
+.session_item{
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.courses .box-content h5{
-    padding: 10px 0 15px 0;
+.session_item:hover{
+    background-color: #232b2d; 
 }
-.courses .box-content h5 a{
-    color: #212529;
-    text-decoration: none !important;
+.session_item.active{
+    background-color: #394649;
 }
-.courses .wrapper .img-box{
-    position: relative;
-    overflow: hidden;
+.session_box{
+    max-height: 420px;
+    overflow-y: scroll;
+    padding-right: 10px;
 }
-.courses .wrapper .img-box img{
-    transition: 0.2s;  
-}
-.courses .wrapper:hover .img-box img{
-    transform: scale(1.05);
-    transition: 0.2s;
-}
-.course-eye{
-    position: absolute;
-    z-index: 1;
-    height: 40px;
-    width: 40px;
-    top: 50%;
-    left: 50%;
-    margin-top: -20px;
-    margin-left: -20px;
-    text-align: center;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 5px;
-    transition: 0.2s;
-    visibility: hidden;
-    pointer-events: none;
-}
-.courses .wrapper:hover .course-eye{
-    top: 45%;
-    transition: 0.2s;
-    visibility: visible;
-}
+.session_box::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .session_box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .session_box::-webkit-scrollbar-thumb {
+    background: #394649;
+  }
 
-/*--------------- Newslatter------------------- */
+  /*--------------- Newslatter------------------- */
 .news-sect input[type="email"] {
 	padding: 10px;
 	width: 35%;
@@ -378,11 +348,6 @@ footer ul li a:hover {
 		max-width: 1280px;
    }
 }
-@media (max-width: 767px) {
-	.section-mt h2 {
-		font-size: 2rem;
-	}	
-}
 @media (max-width: 576px) {
 	.news-sect input[type="email"] {
 		width: 50%;
@@ -406,4 +371,3 @@ footer ul li a:hover {
 		font-size: 12px;
    }
 }
-
