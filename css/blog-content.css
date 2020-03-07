@@ -25,7 +25,7 @@ p {
 }
 
 header nav {
-	background: rgba(0,0,0,.80);
+	background: rgba(0,0,0,.90);
 }
 .navbar-brand img {
 	width: 154px;
@@ -33,14 +33,23 @@ header nav {
 .navbar-dark .navbar-nav .nav-link {
 	transition: 0.5s all;
 	text-transform: uppercase;
+	display: inline-block;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
 	color: #F9E155!important;
 }
-@media (max-width: 576px) {
-.navbar-brand img {
-	width: 120px;
+.navbar .navbar-nav .nav-item {
+	padding: 0 5px;
 }
+@media (max-width: 991px) {
+	.navbar .navbar-nav .nav-item {
+		padding: 5px 5px;
+	}
+}
+@media (max-width: 576px) {
+	.navbar-brand img {
+		width: 120px;
+   }
 }
 .modal-backdrop {
     z-index: 1029;
@@ -49,7 +58,6 @@ header nav {
 .openBtn {
 	background: none;
 	border: none;
-	padding: 10px 15px;
 	font-size: 20px;
 	cursor: pointer;
 	outline: none;
@@ -113,26 +121,13 @@ header nav {
 }
 @media (max-width: 576px){
 	.overlay input[type=text] {
-	font-size: 15px;
-}
-.overlay button {
-	font-size: 15px;
-}	
+		font-size: 15px;
+   }
+	.overlay button {
+		font-size: 15px;
+   }
 }
 /*------------- searchbar end --------------- */
-/*------------------scrollUp----------------*/
-  #scrollUp {
-    bottom: 20px;
-    right: 20px;
-    border:2px solid #ccc;
-    border-radius: 10px;
-    background-image: url(../img/scrollUp.png);
-    height: 50px;
-    width: 38px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .mybtn {
 	background: none;
 	border: none;
@@ -150,16 +145,30 @@ header nav {
 	color: #B06FD9;
 	border: 1.5px solid #B06FD9;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.mybtn {
-		margin: 10px!important;
+		width: 50%;
+		margin: 0 auto;
    }
+}
+/*------------------scrollUp----------------*/
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    border:2px solid #ccc;
+    border-radius: 10px;
+    background-image: url(../img/scrollUp.png);
+    height: 50px;
+    width: 38px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .blog-content-slide-img {
 	background-image: url('../img/blog-content-img1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 70vh;
+	height: 500px;
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -182,22 +191,18 @@ header nav {
 	0%{
 		opacity: 0;
 		top: 20%;
-
 	}
 	15%{
 	opacity: 0;
 		top: 20%;
-	
 	}
 	50%{
 	opacity: 1;
-		top: 60%;
-	
+	top: 60%;
 	}
 	100%{
 	opacity: 1;
-		top: 60%;
-	
+	top: 60%;
 	}
 }
 .scroll-btn{
@@ -265,6 +270,7 @@ font-size:40px;
 font-size: 25px;
 margin-top: 38px;
 line-height: 42px;
+font-weight: 500;
 }
 
 .clearfix{
@@ -313,14 +319,10 @@ line-height: 42px;
 
 /*--------------------Artical collection---------------------*/
 .nxt-clct-txt-box{
-	max-width:83%;
-	float: right;
-	padding: 50px 0;
+	padding: 50px 15%;
 }
-
 .nxt-clct-txt-box h3{
 font-size: 40px;
-width: 80%;
 color: #484848;
 font-weight: 600;
 line-height: 58px;
@@ -328,7 +330,6 @@ margin-bottom: 35px;
 }
 .nxt-clct-txt-box p{
 font-size: 20px;
-width: 80%;
 color: #5e5e5e;
 }
 .nxt-clct-txt-box a{
@@ -517,7 +518,7 @@ footer ul li a:hover {
 		max-width: 1280px;
    }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 .profile_content h2 {
     font-size: 35px;
 }
@@ -543,7 +544,7 @@ footer ul li a:hover {
     line-height: 28px;
 }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 .profile_content h2 {
     font-size: 32px;
 }
@@ -571,16 +572,14 @@ footer ul li a:hover {
 }
 
 }
-@media (max-width: 768px) {
-	.blog-content-slide-img{
-		height: 500px;
-	}
+@media (max-width: 767px) {
 	.header_blog_text h2 {
 		font-size: 3.6rem;
 	}
 .profile_content p {
     font-size: 22px;
-    margin-top: 25px;
+	margin-top: 25px;
+	line-height: 35px;
 }
 .box_btm_mrg{
 	margin-bottom: 30px;
@@ -593,10 +592,13 @@ footer ul li a:hover {
     width: 100%;
     text-align: center;
 }
+.nxt-clct-txt-box{
+	padding: 50px 15px;
+}
 .nxt-clct-img {
     height: 400px;
 }
- @media (max-width: 576px) {
+ @media (max-width: 575px) {
 	.header_blog_text h2 {
 		font-size: 2.7rem;
 	}
@@ -621,9 +623,6 @@ footer ul li a:hover {
 .profile_content h2 {
 	font-size: 25px;
 	line-height: 40px;
-}
-.profile_content p {
-    font-size: 20px;
 }
  }
  @media (max-width: 393px) {

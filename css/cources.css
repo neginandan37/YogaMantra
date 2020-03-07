@@ -27,7 +27,7 @@ html, * {
 }
 
 header nav {
-	background: rgba(0,0,0,.80);
+	background: rgba(0,0,0,.90);
 }
 .navbar-brand img {
 	width: 154px;
@@ -35,9 +35,18 @@ header nav {
 .navbar-dark .navbar-nav .nav-link {
 	transition: 0.5s all;
 	text-transform: uppercase;
+	display: inline-block;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
 	color: #F9E155!important;
+}
+.navbar .navbar-nav .nav-item {
+	padding: 0 5px;
+}
+@media (max-width: 991px) {
+	.navbar .navbar-nav .nav-item {
+		padding: 5px 5px;
+	}
 }
 @media (max-width: 576px) {
 	.navbar-brand img {
@@ -51,7 +60,6 @@ header nav {
 .openBtn {
 	background: none;
 	border: none;
-	padding: 10px 15px;
 	font-size: 20px;
 	cursor: pointer;
 	outline: none;
@@ -139,16 +147,38 @@ header nav {
 	color: #B06FD9;
 	border: 1.5px solid #B06FD9;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.mybtn {
-		margin: 10px!important;
+		width: 50%;
+		margin: 0 auto;
    }
 }
+/*------------------scrollUp----------------*/
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    border:2px solid #ccc;
+    border-radius: 10px;
+    background-image: url(../img/scrollUp.png);
+    height: 50px;
+    width: 38px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .slide-img {
-	background-image: url('../img/header-img.jpg');
+	background-image: url('../img/cources-header-img.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 400px;
+	background-position: right center;
+}
+header .header_text_box{
+	padding-top: 150px;
+}
+header .header_text_box h3{
+	font-size: calc(25px + 2vw);
+	font-weight: 800;
 }
 
 .courses .wrapper{
@@ -383,7 +413,10 @@ footer ul li a:hover {
 		font-size: 2rem;
 	}	
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
+	header .header_text_box h3{
+		font-size: calc(18px + 2vw);
+	}
 	.news-sect input[type="email"] {
 		width: 50%;
 		font-size: 14px;
