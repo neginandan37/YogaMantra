@@ -141,6 +141,7 @@ header nav {
 	display: block;
 	padding: 0 15px;
 	text-align: center;
+	margin-left: 3rem;
 }
 .mybtn:hover {
 	text-decoration: none;
