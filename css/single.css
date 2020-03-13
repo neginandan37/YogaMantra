@@ -153,6 +153,121 @@ header nav {
 		margin: 0 auto;
    }
 }
+/*--------------- login-popup-box start------------------- */
+.form-box{
+	width:100%;
+	height: 360px;
+	position: relative;
+	overflow: hidden;
+}
+.button-box{
+	width: 230px;
+	margin: 10px auto;
+	position: relative;
+	box-shadow:  0 0 20px 9px #2c26231f;
+	border-radius: 30px;
+}
+.button-box .toggle-btn{
+	padding: 12px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+.button-box #btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 115px;
+	height: 100%;
+	background: linear-gradient(to right, #ff105f, #ffad06);
+	border-radius: 30px;
+	transition: 0.5s;
+}
+ .social-icon{
+	margin: 20px 40px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.social-icon button{
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 48%;
+  cursor: pointer; 
+  transition: 0.5s all;
+}
+.social-icon button:hover{
+  box-shadow: 0 2px 5px #eee;
+}
+ .social-icon img{
+	width: 30px;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #7f7f7f3d;
+}
+.social-icon button span{
+  font-size: 14px;
+}
+.form-box .input-group{
+position: absolute;
+width: 100%;
+transition: 0.5s;
+padding: 40px;
+}
+.form-box .input-group .input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+	font-size: 14px;
+}
+.form-box .input-group .submit-btn{
+	width: 70%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #ff105f, #ffad06);
+	border: 0;   
+}
+
+ #register{
+	left: 550px;
+}
+.check-box{
+	  margin: 30px 10px 30px 0;
+  }
+  .form-box p span{
+	  color: #777;
+	  font-size: 12px;
+	  bottom: 2px;
+	  position: relative;
+  }
+  @media (max-width: 440px) {
+	.social-icon{
+	margin: 20px 10px 0;
+}
+ .social-icon img{
+	width: 20px;
+	margin: 0 5px;
+}
+.social-icon button span{
+  font-size: 12px;
+}
+.form-box .input-group{
+padding:  40px 10px;
+}
+  }
+/*--------------- login-popup-box end------------------- */
+
 /*------------------scrollUp----------------*/
 #scrollUp {
     bottom: 20px;
@@ -198,7 +313,7 @@ header nav {
     padding-right: 10px;
 }
 .session_box::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
   }
   
   .session_box::-webkit-scrollbar-track {
